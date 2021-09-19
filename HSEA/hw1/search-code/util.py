@@ -28,7 +28,8 @@
 
 import sys
 import inspect
-import heapq, random
+import heapq
+import random
 
 
 class FixedRandom:
@@ -126,29 +127,32 @@ class FixedRandom:
         self.random = random.Random()
         self.random.setstate(fixedState)
 
+
 """
  Data structures useful for implementing SearchAgents
 """
 
+
 class Stack:
-    "A container with a last-in-first-out (LIFO) queuing policy."
+    """A container with a last-in-first-out (LIFO) queuing policy."""
     def __init__(self):
         self.list = []
 
     def push(self,item):
-        "Push 'item' onto the stack"
+        """Push 'item' onto the stack"""
         self.list.append(item)
 
     def pop(self):
-        "Pop the most recently pushed item from the stack"
+        """Pop the most recently pushed item from the stack"""
         return self.list.pop()
 
     def isEmpty(self):
-        "Returns true if the stack is empty"
+        """Returns true if the stack is empty"""
         return len(self.list) == 0
 
+
 class Queue:
-    "A container with a first-in-first-out (FIFO) queuing policy."
+    """A container with a first-in-first-out (FIFO) queuing policy."""
     def __init__(self):
         self.list = []
 
@@ -166,6 +170,7 @@ class Queue:
     def isEmpty(self):
         "Returns true if the queue is empty"
         return len(self.list) == 0
+
 
 class PriorityQueue:
     """
