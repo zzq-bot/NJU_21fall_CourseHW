@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="04c2cc7e-21eb-4656-b9cc-03bfb02bb602" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1yDRxXzDvkslq4BdfFSvcHWtis4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\liuda\Desktop\search\search\layouts" />
+      <recent name="C:\Users\liuda\Desktop\search\search\do" />
+      <recent name="C:\Users\liuda\Desktop\search\search\undo" />
+      <recent name="C:\Users\liuda\Desktop\search\search\corner" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.pacman">
+    <configuration name="autograder" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="search" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/autograder.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pacman" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="search" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pacman.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="searchTestClasses" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="search" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/searchTestClasses.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="submission_autograder" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="search" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/submission_autograder.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.pacman" />
+        <item itemvalue="Python.autograder" />
+        <item itemvalue="Python.searchTestClasses" />
+        <item itemvalue="Python.submission_autograder" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="04c2cc7e-21eb-4656-b9cc-03bfb02bb602" name="Default Changelist" comment="" />
+      <created>1631784419306</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1631784419306</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="634" y="272" key="FileChooserDialogImpl" timestamp="1631870680160">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state x="634" y="272" key="FileChooserDialogImpl/0.0.1707.1027@0.0.1707.1027" timestamp="1631870680160" />
+    <state width="1284" height="312" key="GridCell.Tab.0.bottom" timestamp="1631957105120">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state width="1284" height="312" key="GridCell.Tab.0.bottom/0.0.1707.1027@0.0.1707.1027" timestamp="1631957105120" />
+    <state width="1284" height="312" key="GridCell.Tab.0.center" timestamp="1631957105120">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state width="1284" height="312" key="GridCell.Tab.0.center/0.0.1707.1027@0.0.1707.1027" timestamp="1631957105120" />
+    <state width="1284" height="312" key="GridCell.Tab.0.left" timestamp="1631957105120">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state width="1284" height="312" key="GridCell.Tab.0.left/0.0.1707.1027@0.0.1707.1027" timestamp="1631957105120" />
+    <state width="1284" height="312" key="GridCell.Tab.0.right" timestamp="1631957105120">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state width="1284" height="312" key="GridCell.Tab.0.right/0.0.1707.1027@0.0.1707.1027" timestamp="1631957105120" />
+    <state width="1284" height="210" key="GridCell.Tab.1.bottom" timestamp="1631957105114">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state width="1284" height="210" key="GridCell.Tab.1.bottom/0.0.1707.1027@0.0.1707.1027" timestamp="1631957105114" />
+    <state width="1284" height="210" key="GridCell.Tab.1.center" timestamp="1631957105114">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state width="1284" height="210" key="GridCell.Tab.1.center/0.0.1707.1027@0.0.1707.1027" timestamp="1631957105114" />
+    <state width="1284" height="210" key="GridCell.Tab.1.left" timestamp="1631957105114">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state width="1284" height="210" key="GridCell.Tab.1.left/0.0.1707.1027@0.0.1707.1027" timestamp="1631957105114" />
+    <state width="1284" height="210" key="GridCell.Tab.1.right" timestamp="1631957105114">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state width="1284" height="210" key="GridCell.Tab.1.right/0.0.1707.1027@0.0.1707.1027" timestamp="1631957105114" />
+    <state x="357" y="159" key="SettingsEditor" timestamp="1631788184371">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state x="357" y="159" key="SettingsEditor/0.0.1707.1027@0.0.1707.1027" timestamp="1631788184371" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pacman.py</url>
+          <line>681</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
