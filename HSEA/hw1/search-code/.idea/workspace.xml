@@ -1,20 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04c2cc7e-21eb-4656-b9cc-03bfb02bb602" name="Default Changelist" comment="" />
+    <list default="true" id="04c2cc7e-21eb-4656-b9cc-03bfb02bb602" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Report.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Report.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search.py" beforeDir="false" afterPath="$PROJECT_DIR$/search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/searchAgents.py" beforeDir="false" afterPath="$PROJECT_DIR$/searchAgents.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1yDRxXzDvkslq4BdfFSvcHWtis4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -39,6 +57,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/autograder.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -60,6 +79,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pacman.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -81,6 +101,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/searchTestClasses.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -102,6 +123,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/submission_autograder.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -120,6 +142,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -130,58 +153,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1631784419306</updated>
+      <workItem from="1633091148328" duration="8138000" />
+      <workItem from="1633148326050" duration="4607000" />
+      <workItem from="1633705702596" duration="4711000" />
+      <workItem from="1633710466061" duration="121000" />
     </task>
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="634" y="272" key="FileChooserDialogImpl" timestamp="1631870680160">
-      <screen x="0" y="0" width="1707" height="1027" />
-    </state>
-    <state x="634" y="272" key="FileChooserDialogImpl/0.0.1707.1027@0.0.1707.1027" timestamp="1631870680160" />
-    <state width="1284" height="312" key="GridCell.Tab.0.bottom" timestamp="1631957105120">
-      <screen x="0" y="0" width="1707" height="1027" />
-    </state>
-    <state width="1284" height="312" key="GridCell.Tab.0.bottom/0.0.1707.1027@0.0.1707.1027" timestamp="1631957105120" />
-    <state width="1284" height="312" key="GridCell.Tab.0.center" timestamp="1631957105120">
-      <screen x="0" y="0" width="1707" height="1027" />
-    </state>
-    <state width="1284" height="312" key="GridCell.Tab.0.center/0.0.1707.1027@0.0.1707.1027" timestamp="1631957105120" />
-    <state width="1284" height="312" key="GridCell.Tab.0.left" timestamp="1631957105120">
-      <screen x="0" y="0" width="1707" height="1027" />
-    </state>
-    <state width="1284" height="312" key="GridCell.Tab.0.left/0.0.1707.1027@0.0.1707.1027" timestamp="1631957105120" />
-    <state width="1284" height="312" key="GridCell.Tab.0.right" timestamp="1631957105120">
-      <screen x="0" y="0" width="1707" height="1027" />
-    </state>
-    <state width="1284" height="312" key="GridCell.Tab.0.right/0.0.1707.1027@0.0.1707.1027" timestamp="1631957105120" />
-    <state width="1284" height="210" key="GridCell.Tab.1.bottom" timestamp="1631957105114">
-      <screen x="0" y="0" width="1707" height="1027" />
-    </state>
-    <state width="1284" height="210" key="GridCell.Tab.1.bottom/0.0.1707.1027@0.0.1707.1027" timestamp="1631957105114" />
-    <state width="1284" height="210" key="GridCell.Tab.1.center" timestamp="1631957105114">
-      <screen x="0" y="0" width="1707" height="1027" />
-    </state>
-    <state width="1284" height="210" key="GridCell.Tab.1.center/0.0.1707.1027@0.0.1707.1027" timestamp="1631957105114" />
-    <state width="1284" height="210" key="GridCell.Tab.1.left" timestamp="1631957105114">
-      <screen x="0" y="0" width="1707" height="1027" />
-    </state>
-    <state width="1284" height="210" key="GridCell.Tab.1.left/0.0.1707.1027@0.0.1707.1027" timestamp="1631957105114" />
-    <state width="1284" height="210" key="GridCell.Tab.1.right" timestamp="1631957105114">
-      <screen x="0" y="0" width="1707" height="1027" />
-    </state>
-    <state width="1284" height="210" key="GridCell.Tab.1.right/0.0.1707.1027@0.0.1707.1027" timestamp="1631957105114" />
-    <state x="357" y="159" key="SettingsEditor" timestamp="1631788184371">
-      <screen x="0" y="0" width="1707" height="1027" />
-    </state>
-    <state x="357" y="159" key="SettingsEditor/0.0.1707.1027@0.0.1707.1027" timestamp="1631788184371" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/pacman.py</url>
-          <line>681</line>
-          <option name="timeStamp" value="46" />
+          <url>file://$PROJECT_DIR$/searchAgents.py</url>
+          <line>384</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -37,7 +37,8 @@ from game import Actions
 import util
 import time
 import search
-
+from search import Node
+import numpy as np
 #######################################################
 # This portion is written for you, but will only work #
 #       after you fill in parts of search.py          #
@@ -245,7 +246,7 @@ class FoodSearchProblem:
     def getCostOfActions(self, actions):
         """Returns the cost of a particular sequence of actions.  If those actions
         include an illegal move, return 999999"""
-        x,y= self.getStartState()[0]
+        x, y= self.getStartState()[0]
         cost = 0
         for action in actions:
             # figure out the next state and see whether it's legal
@@ -290,7 +291,132 @@ def foodHeuristic(state, problem):
     Subsequent calls to this heuristic can access
     problem.heuristicInfo['wallCount']
     """
-    position, foodGrid = state
     "*** YOUR CODE HERE ***"
-    return 0
 
+    position, foodGrid = state
+    foodlist = foodGrid.asList()
+    if not foodlist:
+        return 0
+    distances = []
+    for foodpos in foodlist:
+        dist = abs(position[0] - foodpos[0]) + abs(position[1] - foodpos[1])
+        #dist = uniformSearch(position, foodpos, problem.startingGameState)
+        #dist = bfs(position, foodpos, problem.walls)
+        distances.append(dist)
+    return max(distances) + foodGrid.count()
+    """def bfs_nearest():
+        frontier = util.Queue()
+        reached = set()
+        frontier.push((position, 0))
+        reached.add(position)
+        while not frontier.isEmpty():
+            pos, cost = frontier.pop()
+            for action in [Directions.NORTH, Directions.SOUTH, Directions.EAST, Directions.WEST]:
+                dx, dy = Actions.directionToVector(action)
+                next_x, next_y = int(pos[0] + dx), int(pos[1] + dy)
+                if not problem.walls[next_x][next_y] and not (next_x, next_y) in reached:
+                    if (next_x, next_y) in foodlist:
+                        return (next_x, next_y), cost + 1
+                    frontier.push(((next_x, next_y), cost + 1))
+                    reached.add((next_x, next_y))
+
+    nearest_food, nearest_cost = bfs_nearest()
+    dist = 0
+    for food in foodlist:
+        dist = max(dist, abs(food[0] - nearest_food[0]) + abs(food[1] - nearest_food[1]))
+    return nearest_cost + dist + foodGrid.count()"""
+
+def uniformSearch(pos1, pos2, startingGameState):
+    problem = PositionSearchProblem(startingGameState, goal=pos2, start=pos1, warn=False, visualize=False)
+    return len(search.astar(problem))
+
+def bfs(pos1, pos2, walls):
+    if pos1 == pos2:
+        return 0
+    frontier = util.Queue()
+    reached = set()
+    frontier.push((pos1, 0))
+    reached.add(pos1)
+    while not frontier.isEmpty():
+        pos, cost = frontier.pop()
+        for action in [Directions.NORTH, Directions.SOUTH, Directions.EAST, Directions.WEST]:
+            dx, dy = Actions.directionToVector(action)
+            next_x, next_y = int(pos[0] + dx), int(pos[1] + dy)
+            if not walls[next_x][next_y] and not (next_x, next_y) in reached:
+                if (next_x, next_y) == pos2:
+                    return cost + 1
+                frontier.push(((next_x, next_y), cost+1))
+                reached.add((next_x, next_y))
+
+
+class OneStepFoodSearchAgent(SearchAgent):
+    def registerInitialState(self, state):
+        #self.max_depth = 1000
+        self.max_depth = 50      #设定探索astar探索次数
+        self.actions = []
+        self.find_best = False    #如果探索中astar已经找到最优解(吃掉所有食物，则从actions中直接获取
+        self._expand = 0
+        #self.heuristic = OneStepFoodHeuristic
+        self.heuristic = task3Heuristic
+        self.eps = 5e-2
+    def getAction(self, state):
+        """根据当前state进行一定深度的探索，得到"""
+        if self.heuristic is OneStepFoodHeuristic and self.find_best and self.actions:
+            self.actions.pop(0)
+            if len(self.actions) == 1:
+                print("Search nodes expanded: ", self._expand)
+            return self.actions[0]
+        if self.eps is not None and np.random.random()<self.eps:
+            return np.random.choice(state.getLegalActions(0))
+        self.find_best, self.actions = self.limited_depth_astar_Search(state)
+        return self.actions[0]
+
+    def limited_depth_astar_Search(self, state):
+        node = (state.deepCopy(), 0, [])
+        original_node = node
+        frontier = util.PriorityQueue()
+        frontier.update(node, self.heuristic(node[0]))
+        reached = set()
+        i = 0
+        while not frontier.isEmpty() and i < self.max_depth:
+            i += 1
+            node = frontier.pop()
+            if node[0].getFood().count() == 0:
+                return True, node[2]
+            if node[0] in reached:
+                continue
+            reached.add(node[0])
+            for action in [Directions.NORTH, Directions.SOUTH, Directions.EAST, Directions.WEST]:
+                try:
+                    nxt_state = node[0].deepCopy().generateSuccessor(0, action)
+                    score = 0
+                    cost = node[1] + 1
+                    actions = node[2] + [action]
+                    frontier.update((nxt_state, cost, actions), cost + self.heuristic(nxt_state))
+                    self._expand += 1
+                except:
+                    continue
+        return False, node[2]
+
+def OneStepFoodHeuristic(state):
+    pos = state.getPacmanPosition()
+    food = state.getFood()
+
+    foodlist = food.asList()
+    if not foodlist:
+        return 0
+    distances = []
+    for foodpos in foodlist:
+        dist = abs(pos[0] - foodpos[0]) + abs(pos[1] - foodpos[1])
+        distances.append(dist)
+    return max(distances) + food.count()
+
+def task3Heuristic(state):
+    if state.isWin():
+        return -1000000
+    if state.isLose():
+        return 1000000
+    score = 0
+    score += state.getNumFood()
+    score += 100 * len(state.getCapsules())
+    return -(state.getScore())

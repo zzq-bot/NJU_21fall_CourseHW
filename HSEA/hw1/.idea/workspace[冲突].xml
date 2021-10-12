@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="80f998f1-8eb4-4f41-afdb-51060b95d871" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Report.md" beforeDir="false" afterPath="$PROJECT_DIR$/Report.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search-code/search.py" beforeDir="false" afterPath="$PROJECT_DIR$/search-code/search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search-code/searchAgents.py" beforeDir="false" afterPath="$PROJECT_DIR$/search-code/searchAgents.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1yMPyWUnXv9zO6W3gzBf2eeQoZb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="hw1" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="hw1" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="80f998f1-8eb4-4f41-afdb-51060b95d871" name="Default Changelist" comment="" />
+      <created>1632058738460</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632058738460</updated>
+      <workItem from="1632058740848" duration="9399000" />
+      <workItem from="1632107971499" duration="21361000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="240" y="204" key="FileChooserDialogImpl" timestamp="1632058872228">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state x="240" y="204" key="FileChooserDialogImpl/0.0.1707.1027@0.0.1707.1027" timestamp="1632058872228" />
+    <state x="355" y="158" key="SettingsEditor" timestamp="1632059486118">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state x="355" y="158" key="SettingsEditor/0.0.1707.1027@0.0.1707.1027" timestamp="1632059486118" />
+    <state x="516" y="222" width="672" height="678" key="search.everywhere.popup" timestamp="1632070235648">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state x="516" y="222" width="672" height="678" key="search.everywhere.popup/0.0.1707.1027@0.0.1707.1027" timestamp="1632070235648" />
+  </component>
+</project>

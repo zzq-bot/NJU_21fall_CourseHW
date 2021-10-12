@@ -18,6 +18,8 @@ Pacman agents (in searchAgents.py).
 """
 
 import util
+import math
+import random
 
 class SearchProblem:
     """
@@ -78,12 +80,89 @@ def nullHeuristic(state, problem=None):
     """
     return 0
 
+def euclideanHeuristic(state, problem):
+    assert problem is not None
+    #print("use euclidean heuristic func")
+    goal_x, goal_y = problem.goal
+    now_x, now_y = state
+    return math.sqrt((goal_x - now_x)**2 + (goal_y - now_y)**2)
+
+def manhattanHeuristic(state, problem):
+    assert problem is not None
+    #print("use manhattan heuristic func")
+    goal_x, goal_y = problem.goal
+    now_x, now_y = state
+    return abs(goal_x - now_x) + abs(goal_y - now_y)
+
+
+def simple_simulate(state, problem, penalty):
+    goal_x, goal_y = problem.goal
+    now_x, now_y = state
+    dx = goal_x - now_x
+    dy = goal_y - now_y
+    direction_x = 1 if dx > 0 else -1
+    direction_y = 1 if dy > 0 else -1
+    cost = abs(dx) + abs(dy)
+    while now_x != goal_x:
+        now_x += direction_x
+        if problem.walls[now_x][now_y]:
+            cost += penalty
+    while now_y != goal_y:
+        now_y += direction_y
+        if problem.walls[now_x][now_y]:
+            cost += penalty
+    return cost
+
+def simulate(state, problem, penalty):
+    goal_x, goal_y = problem.goal
+    now_x, now_y = state
+    direction_x = 1 if goal_x - now_x > 0 else -1
+    direction_y = 1 if goal_y - now_y > 0 else -1
+    cost = abs(goal_x - now_x) + abs(goal_y - now_y)
+    while now_x != goal_x and now_y != goal_y:
+        r = random.randint(0, 1)
+        if r == 0:
+            now_x += direction_x
+        else:
+            now_y += direction_y
+        if problem.walls[now_x][now_y]:
+            cost += penalty
+    while now_x != goal_x:
+        now_x += direction_x
+        if problem.walls[now_x][now_y]:
+            cost += penalty
+    while now_y != goal_y:
+        now_y += direction_y
+        if problem.walls[now_x][now_y]:
+            cost += penalty
+    return cost
+
+
+def modifiedManhattanHeuristic(state, problem, freq):
+    assert problem is not None
+    penalty = 5
+    cost = float("inf")
+    for _ in range(freq):
+        cost = min(cost, simulate(state, problem, penalty))
+    return cost
+    #return simple_simulate(state, problem, penalty)
+
 def myHeuristic(state, problem=None):
     """
         you may need code other Heuristic function to replace  NullHeuristic
         """
     "*** YOUR CODE HERE ***"
-    return 0
+    #return euclideanHeuristic(state, problem)
+    #return 1.0 * manhattanHeuristic(state, problem)
+    return modifiedManhattanHeuristic(state, problem, 30)
+
+
+class Node:
+    def __init__(self, state, cost, actions):
+        self.state = state
+        self.cost = cost
+        self.actions = actions
+
 
 def aStarSearch(problem, heuristic=nullHeuristic):
     """Search the node that has the lowest combined cost and heuristic first.
@@ -99,7 +178,27 @@ def aStarSearch(problem, heuristic=nullHeuristic):
         print("Start's successors:", problem.getSuccessors(problem.getStartState()))
         """
     "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+
+    random.seed(7)
+
+    node = Node(problem.getStartState(), 0., [])
+    frontier = util.PriorityQueue()
+    frontier.update(node, heuristic(node.state, problem))
+    reached = set()
+    while not frontier.isEmpty():
+        node = frontier.pop()
+        if problem.isGoalState(node.state):
+            return node.actions
+        if node.state in reached:
+            continue
+        reached.add(node.state)
+        for child in problem.getSuccessors(node.state):
+            s, act, c = child
+            cost = node.cost + c
+            actions = node.actions + [act]
+            frontier.update(Node(s, cost, actions), cost + heuristic(s, problem))
+
+
 
 # Abbreviations
 astar = aStarSearch
